@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcade Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" id="homeLink"><span class="brand-mark">✦</span> ARCADE HUB</a>
+    <div class="top-actions">
+      <span class="tagline">YOUR NEXT HIGH SCORE STARTS HERE</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section id="homeView">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">THE PLAYGROUND IS OPEN</p>
+          <h1>Pick a game.<br><span>Make it count.</span></h1>
+          <p class="hero-copy">Quick games, big scores, zero downloads.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="hero-symbol">✦</div>
+          <div class="floating-chip chip-one">PLAY</div>
+          <div class="floating-chip chip-two">★</div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div>
+          <h2>Game library</h2>
+          <p id="gameCount" class="muted"></p>
+        </div>
+        <label class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search games..." autocomplete="off">
+        </label>
+      </div>
+      <div id="gameGrid" class="game-grid"></div>
+      <p id="noResults" class="empty-state hidden">No games found. Try another search.</p>
+    </section>
+
+    <section id="playerView" class="hidden">
+      <button id="backButton" class="back-button">← Back to library</button>
+      <div class="player-heading">
+        <div><p class="eyebrow">NOW PLAYING</p><h2 id="playerTitle">Game</h2></div>
+        <span id="playerCategory" class="category-pill"></span>
+      </div>
+      <div id="gameStage" class="game-stage"></div>
+      <p id="gameNote" class="game-note"></p>
+    </section>
+  </main>
+  <footer>ARCADE HUB <span>•</span> Made for fun.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
